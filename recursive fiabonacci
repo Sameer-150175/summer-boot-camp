@@ -1,0 +1,19 @@
+class Main {
+   public static int fiabonacci(int n) {
+       
+       if(n == 0){
+           return 0;
+           
+       }
+       if (n == 1){
+           return 1;
+       }
+       return fiabonacci(n - 1)+ fiabonacci(n - 2);
+       
+       
+       
+    }
+    public static void main(String[] args){
+        System.out.println(fiabonacci(6));
+    }
+}
