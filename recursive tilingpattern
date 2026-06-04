@@ -1,0 +1,18 @@
+class Main {
+   public static int tilingpattern(int n) {
+       
+       if(n < 4){
+           return 1;
+           
+       }
+       
+       
+       return tilingpattern(n - 1)+ tilingpattern(n - 4);
+   }
+       
+       
+    
+    public static void main(String[] args){
+        System.out.println(tilingpattern(6));
+    }
+}
